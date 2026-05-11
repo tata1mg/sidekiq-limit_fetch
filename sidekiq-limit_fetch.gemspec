@@ -3,18 +3,18 @@
 require 'English'
 Gem::Specification.new do |gem|
   gem.name          = 'sidekiq-limit_fetch'
-  gem.version       = '4.4.1'
+  gem.version       = '4.4.2'
   gem.license       = 'MIT'
-  gem.authors       = ['Dean Perry']
-  gem.email         = 'dean@deanpcmad.com'
-  gem.summary       = 'Sidekiq strategy to support queue limits'
-  gem.homepage      = 'https://github.com/deanpcmad/sidekiq-limit_fetch'
+  gem.authors       = ['Lokendra Singh']
+  gem.email         = 'lokendra.singh@1mg.com'
+  gem.summary       = 'Integrate redis-client-namespace'
+  gem.homepage      = 'https://github.com/tata1mg/sidekiq-limit_fetch'
   gem.description   = 'Sidekiq strategy to restrict number of workers which are able to run specified ' \
                       'queues simultaneously.'
 
   gem.metadata['homepage_uri'] = gem.homepage
-  gem.metadata['source_code_uri'] = 'https://github.com/deanpcmad/sidekiq-limit_fetch'
-  gem.metadata['changelog_uri'] = 'https://github.com/deanpcmad/sidekiq-limit_fetch/blob/master/CHANGELOG.md'
+  gem.metadata['source_code_uri'] = 'https://github.com/tata1mg/sidekiq-limit_fetch'
+  gem.metadata['changelog_uri'] = 'https://github.com/tata1mg/sidekiq-limit_fetch/blob/master/CHANGELOG.md'
   gem.metadata['rubygems_mfa_required'] = 'true'
 
   gem.files         = `git ls-files`.split($INPUT_RECORD_SEPARATOR)

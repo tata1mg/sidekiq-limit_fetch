@@ -1,5 +1,8 @@
 # Changelog
 
+## [4.4.2] - 2026-05-11
+- Integrate redis-client-namespace gem for supporting sidekiq v8 with namespace 
+
 ## [4.3.2] - 2022-09-01
 
 - #139 - Fix Redis deprecation warnings from [@adamzapasnik](https://github.com/adamzapasnik)
