@@ -124,7 +124,9 @@ module Sidekiq
 
       def namespace
         @namespace ||= Sidekiq.redis do |it|
-          if it.respond_to?(:namespace) && it.namespace
+          if defined?(RedisClient::Namespace::Middleware)
+            "#{it.config.custom[:namespace]}#{it.config.custom[:separator]}"
+          elsif it.respond_to?(:namespace) && it.namespace
             "#{it.namespace}:"
           else
             ''
